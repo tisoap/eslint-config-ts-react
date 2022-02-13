@@ -19,25 +19,26 @@ For the full list of rules, check the [`.eslintrc.js` file](./.eslintrc.js) in t
 With NPM:
 
 ```bash
-npm install eslint typescript @tisoap/eslint-config-ts-react --save-dev
+npm install typescript eslint @typescript-eslint/parser eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-prefer-function-component eslint-plugin-sonarjs eslint-plugin-testing-library @shopify/eslint-plugin @typescript-eslint/eslint-plugin @tisoap/eslint-config-ts-react --save-dev
 ```
 
 With Yarn:
 
 ```bash
-yarn add -D eslint typescript @tisoap/eslint-config-ts-react
+yarn add typescript eslint @typescript-eslint/parser eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-prefer-function-component eslint-plugin-sonarjs eslint-plugin-testing-library @shopify/eslint-plugin @typescript-eslint/eslint-plugin @tisoap/eslint-config-ts-react --dev
 ```
 
 `.eslintrc` configuration:
 
 ```js
 module.exports = {
-	parserOptions: {
-		// Replace with the path to your project's tsconfig file
-		project: './tsconfig.json'
-	},
-	extends: ['@tisoap/eslint-config-ts-react']
-}
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    // Replace with the path to your project's tsconfig file
+    project: "./tsconfig.json",
+  },
+  extends: ["@tisoap/eslint-config-ts-react"],
+};
 ```
 
 ### Usage With Prettier
@@ -55,22 +56,23 @@ npm install prettier eslint-plugin-prettier eslint-config-prettier --save-dev
 With Yarn:
 
 ```bash
-yarn add -D prettier eslint-plugin-prettier eslint-config-prettier
+yarn add prettier eslint-plugin-prettier eslint-config-prettier --dev
 ```
 
 Update your `.eslintrc` configuration:
 
 ```js
 module.exports = {
-	parserOptions: {
-		project: ['./tsconfig.json']
-	},
-	plugins: ['prettier'],
-	extends: ['@tisoap/eslint-config-ts-react', 'plugin:prettier/recommended'],
-	rules: {
-		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
-	}
-}
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: ["./tsconfig.json"],
+  },
+  plugins: ["prettier"],
+  extends: ["@tisoap/eslint-config-ts-react", "plugin:prettier/recommended"],
+  rules: {
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+  },
+};
 ```
 
 Add a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) with your configurations.
