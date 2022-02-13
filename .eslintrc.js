@@ -59,7 +59,17 @@ module.exports = {
 		// Enable
 		'@typescript-eslint/consistent-type-imports': 'error',
 		'@typescript-eslint/no-explicit-any': 'error',
-		'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+		'prettier/prettier': [
+			'error',
+			{
+				semi: false,
+				useTabs: true,
+				printWidth: 80,
+				singleQuote: true,
+				trailingComma: 'none',
+				jsxSingleQuote: true
+			}
+		],
 		// Sort imports
 		'import/order': [
 			'error',
