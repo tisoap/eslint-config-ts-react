@@ -32,12 +32,12 @@ yarn add -D eslint typescript @tisoap/eslint-config-ts-react
 
 ```js
 module.exports = {
-	parserOptions: {
-		// Replace with the path to your project's tsconfig file
-		project: './tsconfig.json'
-	},
-	extends: ['@tisoap/eslint-config-ts-react']
-}
+  parserOptions: {
+    // Replace with the path to your project's tsconfig file
+    project: "./tsconfig.json",
+  },
+  extends: ["@tisoap/eslint-config-ts-react"],
+};
 ```
 
 ### Usage With Prettier
@@ -62,15 +62,15 @@ Update your `.eslintrc` configuration:
 
 ```js
 module.exports = {
-	parserOptions: {
-		project: ['./tsconfig.json']
-	},
-	plugins: ['prettier'],
-	extends: ['@tisoap/eslint-config-ts-react', 'plugin:prettier/recommended'],
-	rules: {
-		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
-	}
-}
+  parserOptions: {
+    project: ["./tsconfig.json"],
+  },
+  plugins: ["prettier"],
+  extends: ["@tisoap/eslint-config-ts-react", "plugin:prettier/recommended"],
+  rules: {
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+  },
+};
 ```
 
 Add a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) with your configurations.
@@ -78,3 +78,9 @@ Add a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) with 
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+### Support
+
+Liked this project and want to show your support? Buy me a coffee:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J472RAJ)
