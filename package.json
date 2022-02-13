@@ -1,6 +1,6 @@
 {
 	"name": "@tisoap/eslint-config-ts-react",
-	"version": "1.2.0",
+	"version": "3.0.0",
 	"private": false,
 	"description": "ESLint configuration for TypeScript and React",
 	"keywords": [
