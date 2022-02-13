@@ -20,6 +20,7 @@
 	"main": "index.js",
 	"scripts": {},
 	"dependencies": {
+		"@shopify/eslint-plugin": "41.1.0",
 		"@typescript-eslint/eslint-plugin": "5.11.0",
 		"@typescript-eslint/parser": "5.11.0",
 		"eslint-plugin-import": "2.25.4",

@@ -33,7 +33,8 @@ module.exports = {
 		'jest-dom',
 		'testing-library',
 		'sonarjs',
-		'react-prefer-function-component'
+		'react-prefer-function-component',
+		'@shopify'
 	],
 	extends: [
 		'eslint:recommended',
@@ -52,11 +53,36 @@ module.exports = {
 		// Disable
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'@typescript-eslint/unbound-method': 'off',
+		'react/display-name': 'off',
 		'react/prop-types': 'off',
 		'react/react-in-jsx-scope': 'off',
 		// Enable
+		'@shopify/jest/no-snapshots': 'error',
+		'@shopify/jsx-no-complex-expressions': 'error',
+		'@shopify/jsx-prefer-fragment-wrappers': 'error',
+		'@shopify/prefer-early-return': 'error',
+		'@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
 		'@typescript-eslint/consistent-type-imports': 'error',
 		'@typescript-eslint/no-explicit-any': 'error',
+		'@typescript-eslint/no-unnecessary-condition': 'error',
+		'array-callback-return': 'error',
+		'max-depth': ['error', 3],
+		'max-lines': ['error', { max: 300 }],
+		'max-nested-callbacks': ['error', 3],
+		'no-else-return': 'error',
+		'no-nested-ternary': 'error',
+		'no-unneeded-ternary': 'error',
+		'prefer-template': 'error',
+		'react-hooks/exhaustive-deps': 'error',
+		'react/jsx-fragments': ['error', 'syntax'],
+		'react/jsx-max-depth': ['error', { max: 5 }],
+		'react/jsx-no-useless-fragment': 'error',
+		'react/jsx-pascal-case': 'error',
+		'react/no-array-index-key': 'error',
+		'react/no-multi-comp': 'error',
+		'react/self-closing-comp': 'error',
+		'sonarjs/cognitive-complexity': ['error', 14],
+		'sonarjs/max-switch-cases': ['error', 10],
 		// Sort imports
 		'import/order': [
 			'error',
