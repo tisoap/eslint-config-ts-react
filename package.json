@@ -1,39 +1,43 @@
 {
-  "name": "@tisoap/eslint-config-ts-react",
-  "version": "2.1.0",
-  "private": false,
-  "description": "ESLint configuration for TypeScript and React",
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "eslint-plugin",
-    "react",
-    "typescript"
-  ],
-  "homepage": "https://github.com/tisoap/eslint-config-ts-react",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:tisoap/eslint-config-ts-react.git"
-  },
-  "license": "MIT",
-  "author": "Tiso Alvarez Puccinelli",
-  "main": "index.js",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
-  "peerDependencies": {
-    "@shopify/eslint-plugin": ">=41",
-    "@typescript-eslint/eslint-plugin": ">=5",
-    "@typescript-eslint/parser": ">=5",
-    "eslint": ">=8",
-    "eslint-plugin-import": ">=2",
-    "eslint-plugin-jest-dom": ">=4",
-    "eslint-plugin-jsx-a11y": ">=6",
-    "eslint-plugin-react": ">=7",
-    "eslint-plugin-react-hooks": ">=4",
-    "eslint-plugin-react-prefer-function-component": ">=1",
-    "eslint-plugin-sonarjs": ">=0.11",
-    "eslint-plugin-testing-library": ">=5",
-    "typescript": ">=4"
-  }
+	"name": "@tisoap/eslint-config-ts-react",
+	"version": "1.2.0",
+	"private": false,
+	"description": "ESLint configuration for TypeScript and React",
+	"keywords": [
+		"eslint",
+		"eslint-config",
+		"eslint-plugin",
+		"react",
+		"typescript"
+	],
+	"homepage": "https://github.com/tisoap/eslint-config-ts-react",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:tisoap/eslint-config-ts-react.git"
+	},
+	"license": "MIT",
+	"author": "Tiso Alvarez Puccinelli",
+	"main": "index.js",
+	"scripts": {},
+	"dependencies": {
+		"@shopify/eslint-plugin": "41.1.0",
+		"@typescript-eslint/eslint-plugin": "5.11.0",
+		"@typescript-eslint/parser": "5.11.0",
+		"eslint-plugin-import": "2.25.4",
+		"eslint-plugin-jest-dom": "4.0.1",
+		"eslint-plugin-jsx-a11y": "6.5.1",
+		"eslint-plugin-react": "7.28.0",
+		"eslint-plugin-react-hooks": "4.3.0",
+		"eslint-plugin-react-prefer-function-component": "1.0.0",
+		"eslint-plugin-sonarjs": "0.11.0",
+		"eslint-plugin-testing-library": "5.0.5"
+	},
+	"devDependencies": {
+		"eslint": "8.9.0",
+		"typescript": "4.5.5"
+	},
+	"peerDependencies": {
+		"eslint": ">=8",
+		"typescript": ">=4"
+	}
 }
