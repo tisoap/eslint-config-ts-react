@@ -29,7 +29,6 @@ module.exports = {
 		'react',
 		'react-hooks',
 		'jsx-a11y',
-		'prettier',
 		'import',
 		'jest-dom',
 		'testing-library',
@@ -42,7 +41,6 @@ module.exports = {
 		'plugin:jsx-a11y/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
-		'plugin:prettier/recommended',
 		'plugin:import/recommended',
 		'plugin:import/typescript',
 		'plugin:jest-dom/recommended',
@@ -59,17 +57,6 @@ module.exports = {
 		// Enable
 		'@typescript-eslint/consistent-type-imports': 'error',
 		'@typescript-eslint/no-explicit-any': 'error',
-		'prettier/prettier': [
-			'error',
-			{
-				semi: false,
-				useTabs: true,
-				printWidth: 80,
-				singleQuote: true,
-				trailingComma: 'none',
-				jsxSingleQuote: true
-			}
-		],
 		// Sort imports
 		'import/order': [
 			'error',
