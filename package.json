@@ -1,6 +1,6 @@
 {
   "name": "@tisoap/eslint-config-ts-react",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "private": false,
   "description": "ESLint configuration for TypeScript and React",
   "keywords": [
@@ -22,11 +22,10 @@
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
-    "eslint": ">=8",
-    "typescript": ">=4",
     "@shopify/eslint-plugin": ">=41",
     "@typescript-eslint/eslint-plugin": ">=5",
     "@typescript-eslint/parser": ">=5",
+    "eslint": ">=8",
     "eslint-plugin-import": ">=2",
     "eslint-plugin-jest-dom": ">=4",
     "eslint-plugin-jsx-a11y": ">=6",
@@ -34,6 +33,7 @@
     "eslint-plugin-react-hooks": ">=4",
     "eslint-plugin-react-prefer-function-component": ">=1",
     "eslint-plugin-sonarjs": ">=0.11",
-    "eslint-plugin-testing-library": ">=5"
+    "eslint-plugin-testing-library": ">=5",
+    "typescript": ">=4"
   }
 }
