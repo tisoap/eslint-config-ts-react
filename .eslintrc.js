@@ -25,16 +25,17 @@ module.exports = {
 		jest: true
 	},
 	plugins: [
+		'@shopify',
 		'@typescript-eslint',
-		'react',
-		'react-hooks',
-		'jsx-a11y',
 		'import',
 		'jest-dom',
-		'testing-library',
-		'sonarjs',
+		'jsx-a11y',
+		'react-hooks',
 		'react-prefer-function-component',
-		'@shopify'
+		'react',
+		'sonarjs',
+		'testing-library',
+		'unicorn'
 	],
 	extends: [
 		'eslint:recommended',
@@ -82,7 +83,10 @@ module.exports = {
 		'react/no-multi-comp': 'error',
 		'react/self-closing-comp': 'error',
 		'sonarjs/cognitive-complexity': ['error', 14],
+		'sonarjs/elseif-without-else': 'error',
 		'sonarjs/max-switch-cases': ['error', 10],
+		'sonarjs/no-inverted-boolean-check': 'error',
+		'unicorn/no-abusive-eslint-disable': 'error',
 		// Sort imports
 		'import/order': [
 			'error',
