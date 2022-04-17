@@ -19,25 +19,25 @@ For the full list of rules, check the [`.eslintrc.js` file](./.eslintrc.js) in t
 With NPM:
 
 ```bash
-npm install eslint typescript @tisoap/eslint-config-ts-react --save-dev
+npm install --save-dev eslint typescript @tisoap/eslint-config-ts-react @shopify/eslint-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-prefer-function-component eslint-plugin-sonarjs eslint-plugin-testing-library eslint-plugin-unicorn
 ```
 
 With Yarn:
 
 ```bash
-yarn add -D eslint typescript @tisoap/eslint-config-ts-react
+yarn add -D eslint typescript @tisoap/eslint-config-ts-react @shopify/eslint-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-prefer-function-component eslint-plugin-sonarjs eslint-plugin-testing-library eslint-plugin-unicorn
 ```
 
 `.eslintrc` configuration:
 
 ```js
 module.exports = {
-  parserOptions: {
-    // Replace with the path to your project's tsconfig file
-    project: "./tsconfig.json",
-  },
-  extends: ["@tisoap/eslint-config-ts-react"],
-};
+	parserOptions: {
+		// Replace with the path to your project's tsconfig file
+		project: './tsconfig.json'
+	},
+	extends: ['@tisoap/eslint-config-ts-react']
+}
 ```
 
 ### Usage With Prettier
@@ -62,15 +62,15 @@ Update your `.eslintrc` configuration:
 
 ```js
 module.exports = {
-  parserOptions: {
-    project: ["./tsconfig.json"],
-  },
-  plugins: ["prettier"],
-  extends: ["@tisoap/eslint-config-ts-react", "plugin:prettier/recommended"],
-  rules: {
-    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
-  },
-};
+	parserOptions: {
+		project: ['./tsconfig.json']
+	},
+	plugins: ['prettier'],
+	extends: ['@tisoap/eslint-config-ts-react', 'plugin:prettier/recommended'],
+	rules: {
+		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
+	}
+}
 ```
 
 Add a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) with your configurations.
