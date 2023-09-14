@@ -59,5 +59,9 @@
     "eslint-plugin-unicorn": ">=48",
     "prettier": ">=3",
     "typescript": ">=5.2"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
